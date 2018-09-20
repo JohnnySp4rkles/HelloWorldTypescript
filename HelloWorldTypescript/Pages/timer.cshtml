@@ -1,0 +1,33 @@
+﻿@page
+@model TimerModel
+@{
+    ViewData["Title"] = "Timer";
+}
+
+<head>
+    <link href="~/css/timer-styles.css" rel="stylesheet" />
+    <script src="~/js/02-02-timer.js"></script>
+    <title>Timer</title>
+</head>
+
+<h1>TypeScript Fundamentals - Types</h1>
+<div id="timerContainer">
+    <div id="timerSurface">
+        <div id="timerHeaders">
+            <div class="HeaderText NormalWidth">MIN</div>
+            <div class="HeaderText NormalWidth">SEC</div>
+            <div class="HeaderText WideWidth">MS</div>
+        </div>
+        <div id="timerNumbers">
+            <div id="minutes" class="TimerText NormalWidth"></div>
+            <div id="seconds" class="TimerText NormalWidth"></div>
+            <div id="milliseconds" class="TimerText WideWidth"></div>
+        </div>
+    </div>
+    <div id="buttonSurface">
+        <div id="startButton" class="Button ButtonStart"></div>
+        <div id="pauseButton" class="Button ButtonPause"></div>
+        <div id="clearButton" class="Button ButtonClear"></div>
+    </div>
+</div>
+

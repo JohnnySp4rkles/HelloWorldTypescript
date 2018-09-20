@@ -6,19 +6,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="scripts\car.ts" />
+    <Content Remove="wwwroot\js\02_06_primitives.ts" />
+    <Content Remove="wwwroot\js\ambient-declarations.ts" />
+    <Content Remove="wwwroot\js\deom_02_05.ts" />
+    <Content Remove="wwwroot\js\dynamictypes.ts" />
+    <Content Remove="wwwroot\js\Grammer.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="scripts\car.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="knockoutjs" Version="3.4.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="scripts\car.ts" />
+    <TypeScriptCompile Include="wwwroot\js\02_06_primitives.ts" />
+    <TypeScriptCompile Include="wwwroot\js\car.ts" />
+    <TypeScriptCompile Include="wwwroot\js\deom_02_05.ts" />
+    <TypeScriptCompile Include="wwwroot\js\dynamictypes.ts" />
+    <TypeScriptCompile Include="wwwroot\js\ambient-declarations.ts" />
+    <TypeScriptCompile Include="wwwroot\js\Grammer.ts" />
   </ItemGroup>
 
 </Project>

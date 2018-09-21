@@ -8,9 +8,20 @@
   <ItemGroup>
     <Content Remove="wwwroot\js\02_06_primitives.ts" />
     <Content Remove="wwwroot\js\ambient-declarations.ts" />
+    <Content Remove="wwwroot\js\car.js" />
+    <Content Remove="wwwroot\js\car.js.map" />
+    <Content Remove="wwwroot\js\car.ts" />
     <Content Remove="wwwroot\js\deom_02_05.ts" />
     <Content Remove="wwwroot\js\dynamictypes.ts" />
     <Content Remove="wwwroot\js\Grammer.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="static\Scripts\02_07_functions.ts" />
+    <None Remove="static\Scripts\04-01-global-module.ts" />
+    <None Remove="static\Scripts\auto.ts" />
+    <None Remove="static\Scripts\interfaces.ts" />
+    <None Remove="static\Scripts\vehicle.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,8 +31,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="static\Scripts\02_07_functions.ts" />
+    <TypeScriptCompile Include="static\Scripts\04-01-global-module.ts" />
+    <TypeScriptCompile Include="static\Scripts\auto.ts" />
+    <TypeScriptCompile Include="static\Scripts\vehicle.ts" />
+    <TypeScriptCompile Include="static\Scripts\interfaces.ts" />
     <TypeScriptCompile Include="wwwroot\js\02_06_primitives.ts" />
-    <TypeScriptCompile Include="wwwroot\js\car.ts" />
     <TypeScriptCompile Include="wwwroot\js\deom_02_05.ts" />
     <TypeScriptCompile Include="wwwroot\js\dynamictypes.ts" />
     <TypeScriptCompile Include="wwwroot\js\ambient-declarations.ts" />

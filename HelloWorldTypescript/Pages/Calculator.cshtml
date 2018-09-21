@@ -1,0 +1,21 @@
+﻿@page
+@model HelloWorldTypescript.Pages.CalculatorModel
+@{
+    ViewData["Title"] = "Calculator";
+}
+<script src="~/static/Scripts/calculator.js"></script>
+<h2>TypeScript Calculator</h2>
+<div class="Calculator">
+    <div>
+        X: <input type="text" id="X" />&nbsp;
+        Y: <input type="text" id="Y" />
+    </div>
+    <br />
+    <div class="Buttons">
+        <button id="Add">Add</button>&nbsp;&nbsp;
+        <button id="Subtract">Subtract</button>
+    </div>
+    <br />
+    <div id="Output"></div>
+</div>
+

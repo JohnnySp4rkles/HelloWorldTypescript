@@ -5,7 +5,7 @@ var Point = /** @class */ (function () {
         this.y = y;
     }
     ;
-    Point.prototype.getDist = function () { return Math.sqrt(this.x * this.y); };
+    Point.prototype.getDist = function () { return Math.sqrt(this.x * this.x + this.y * this.y); };
     return Point;
 }());
 var p = new Point(3, 4);
